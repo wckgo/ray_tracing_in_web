@@ -1,0 +1,18 @@
+{
+  "name": "ray_tracing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "web-dev-server --node-resolve --watch --open",
+    "build": "rollup -c"
+  },
+  "author": "wckgo",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@web/dev-server": "^0.1.14",
+    "@web/rollup-plugin-html": "^1.6.0",
+    "rollup": "^2.45.2"
+  }
+}
