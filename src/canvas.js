@@ -1,8 +1,7 @@
+import { height, width } from "./constants";
+
 const canvas = document.querySelector("#canvas");
 const context = canvas.getContext("2d");
-const aspect_ratio = 16 / 9;
-const height = 360;
-const width = ~~(aspect_ratio * height);
 canvas.width = width;
 canvas.height = height;
 
