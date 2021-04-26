@@ -1,2 +1,3 @@
-export const HEIGHT = 360;
-export const WIDTH = 640;
+export const aspect_ratio = 16 / 9;
+export const height = 360;
+export const width = ~~(aspect_ratio * height);

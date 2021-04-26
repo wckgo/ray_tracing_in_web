@@ -1,13 +1,12 @@
-import { HEIGHT, WIDTH } from "./constants";
-
-const main = document.querySelector("main");
-const canvas = document.createElement("canvas");
+const canvas = document.querySelector("#canvas");
 const context = canvas.getContext("2d");
-canvas.width = WIDTH;
-canvas.height = HEIGHT;
-main.appendChild(canvas);
+const aspect_ratio = 16 / 9;
+const height = 360;
+const width = ~~(aspect_ratio * height);
+canvas.width = width;
+canvas.height = height;
 
-const imageData = context.createImageData(WIDTH, HEIGHT);
+const imageData = context.createImageData(width, height);
 
 const buffer = new SharedArrayBuffer(imageData.data.buffer.byteLength);
 const view = new Uint8ClampedArray(buffer);
